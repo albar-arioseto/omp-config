@@ -1,0 +1,13 @@
+providers:
+  openrouter:
+    compat:
+      openRouterRouting:
+        ignore:
+          - deepinfra
+  arilo:
+    baseUrl: https://api.arilo.id/v1
+    apiKey: ${MY_GATEWAY_API_KEY}  # value stays in env, never committed
+    api: openai-completions
+    authHeader: true
+    discovery:
+      type: openai-models-list
